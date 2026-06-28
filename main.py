@@ -20,7 +20,7 @@ while ch.lower() == 'y':
     print("=" * 50)
 
     choice = int(input("Enter your choice: "))
-
+# ---------------add tasks---------------
     if choice == 1:
 
         no = int(input("How many tasks do you want to add? "))
@@ -31,7 +31,7 @@ while ch.lower() == 'y':
         print("-" * 50)
         print("Tasks Added Successfully!")
         print("-" * 50)
-
+# --------------delete tasks------------
     elif choice == 2:
 
         if len(task) == 0:
@@ -56,7 +56,7 @@ while ch.lower() == 'y':
                 print("Task Removed Successfully!")
             else:
                 print("Invalid Task Number!")
-
+# -------------view list of tasks--------------
     elif choice == 3:
 
         if len(task) == 0:
@@ -73,7 +73,7 @@ while ch.lower() == 'y':
                 print(i + 1, ".", task[i])
 
             print("-" * 50)
-
+#  -------------- show progress of your tasks---------
     elif choice == 4:
 
         total = len(task)
